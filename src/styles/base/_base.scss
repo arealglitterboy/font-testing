@@ -1,0 +1,30 @@
+:root {
+    --ff-primary: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+	--colour-text: #3D405B;
+
+    --colour-primary: #f8f6f6;
+
+    --colour-secondary: #119DA4;
+
+    --colour-success: #A9FDAC;
+
+    --colour-error: #C3423F;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: min(70rem, 100vw);
+    margin: 0 auto;
+    color: var(--colour-text);
+    background-color: var(--colour-primary);
+}
+
+fieldset {
+    border: none;
+}

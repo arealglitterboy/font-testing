@@ -1,0 +1,30 @@
+.font-select {
+    font-family: var(--ff-primary, cursive);
+    display: grid;
+    grid-template-areas: "name custom clear" "name custom add";
+    grid-template-columns: auto 1fr auto;
+    gap: 0.2rem;
+
+    &__name {
+        grid-area: name;
+    }
+
+    &__custom-text {
+        grid-area: custom;
+        padding: 0.2em 0.5em;
+        &:empty::before {
+            content: 'Lorem ipsum dolor...';
+            color: var(--colour-grey, grey);
+        }
+    }
+
+    &__button {
+        padding: 0.2em 1em;
+        &--clear {
+            grid-area: clear;
+        }
+        &--add {
+            grid-area: add;
+        }
+    }
+}
